@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Room</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+        <div class="logo">🏨 Luxury Hotel</div>
+
+        <ul>
+            <li><a href="index.html">🏨 Home</a></li>
+            <li><a href="rooms.html">🛏 Rooms</a></li>
+            <li><a href="dining.html">🍽 Dinig </a></li>
+            <li><a href="events.html">🎉 Events</a></li>
+            <li><a href="contact.html">📞 Contact</a></li>
+            <li><a href="reviews.html">⭐ Reviews</a></li>
+        </ul>
+
+        <a href="booking.html" class="btn">Book Now</a>
+    </nav>
+
+    <!-- Booking Section -->
+
+    <section class="booking-section">
+
+        <h1>Book Your Stay</h1>
+
+        <form onsubmit="return bookRoom()">
+
+            <input type="text" id="fullname" placeholder="Full Name">
+
+            <input type="email" id="email" placeholder="Email Address">
+
+            <input type="tel" id="phone" placeholder="Phone Number">
+
+            <select id="room">
+                <option value="">Select Room</option>
+                <option>Deluxe Room</option>
+                <option>Luxury Suite</option>
+                <option>Family Room</option>
+                <option>Premium Room</option>
+            </select>
+
+            <label>Check In</label>
+            <input type="date" id="checkin">
+
+            <label>Check Out</label>
+            <input type="date" id="checkout">
+
+            <input type="number" id="guests" placeholder="Number of Guests">
+
+            <button type="submit">
+                Confirm Booking
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Luxury Hotel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

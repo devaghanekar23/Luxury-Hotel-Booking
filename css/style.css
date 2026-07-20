@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    background: #08192E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: #D4A44F;
+}
+
+.btn {
+    background: #D4A44F;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #B8872E;
+    transform: translateY(-3px);
+}
+
+.hero {
+    height: 100vh;
+    background: url("../images/hotel.png") center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(8, 20, 40, .65), rgba(0, 0, 0, .35));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-shadow: 0 8px 25px rgba(0, 0, 0, .45);
+}
+
+.hero p {
+    font-size: 28px;
+    margin: 20px 0 35px;
+    color: #F2F2F2;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, .4);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: rgba(20, 20, 20, .78);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    padding: 11px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .35);
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    width: 170px;
+    height: 52px;
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(212, 164, 79, .35);
+    border-radius: 10px;
+    padding: 0 15px;
+}
+
+.input-wrapper i {
+    color: #D4A44F;
+    font-size: 16px;
+}
+
+.input-wrapper input,
+.input-wrapper select {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+.input-wrapper input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.search-box input,
+.search-box select {
+    width: 176px;
+    height: 50px;
+    /* background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(212, 164, 79, .35); */
+    border-radius: 10px;
+    padding: -5px 18px;
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #d6d6d6;
+}
+
+.search-box input:focus,
+.search-box select:focus {
+    border-color: #D4A44F;
+}
+
+input[type="date"] {
+    color: white;
+}
+
+.search-box select {
+    cursor: pointer;
+}
+
+.search-box button {
+    width: 170px;
+    height: 50px;
+    background: #D4A44F;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.search-box button:hover {
+    background: #B8872E;
+    transform: translateY(-2px);
+}
+
+/* Future room */
+
+.rooms {
+    padding: 50px;
+    text-align: center;
+}
+
+.room-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #081b3a;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+.features {
+    background: #081b3a;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.rooms-page {
+    padding: 85px;
+    text-align: center;
+}
+
+.rooms-page h1 {
+    color: #081b3a;
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 350px;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.rooms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.room-card {
+    width: 300px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.room-card h3 {
+    margin-top: 10px;
+}
+
+.room-card p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.room-card a {
+    text-decoration: none;
+    background: #081b3a;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+
+
+
+
+.room-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 60px;
+    background: #f5f5f5;
+}
+
+.room-image img {
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.room-info {
+    max-width: 500px;
+}
+
+.room-info h1 {
+    color: #081b3a;
+    margin-bottom: 10px;
+}
+
+.room-info h2 {
+    color: #d49a2a;
+    margin-bottom: 15px;
+}
+
+.room-info p {
+    line-height: 1.7;
+}
+
+.room-info ul {
+    margin: 20px 0;
+}
+
+.room-info li {
+    margin: 10px 0;
+    list-style: none;
+}
+
+.room-info button,
+.book-btn {
+    background: #081b3a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-btn {
+    background: #d49a2a;
+}

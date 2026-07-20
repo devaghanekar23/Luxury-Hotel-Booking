@@ -1,0 +1,364 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f8f8f8;
+    color: #333;
+}
+
+nav {
+    background: #08192E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: #D4A44F;
+}
+
+.btn {
+    background: #D4A44F;
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 15px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #B8872E;
+    transform: translateY(-3px);
+}
+
+/* hero */
+
+.hero {
+
+    width: 100%;
+    height: 100vh;
+    background: url("../images/dining-banner.jpg") center center/cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .55);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 800px;
+}
+
+.hero-content h5 {
+    color: #D4A44F;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 72px;
+    font-family: "Playfair Display", serif;
+}
+
+.hero-content p {
+    color: #eee;
+    font-size: 20px;
+    line-height: 35px;
+    margin: 30px 0;
+}
+
+.reserve-btn {
+    display: inline-block;
+    background: #D4A44F;
+    color: white;
+    padding: 16px 40px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.reserve-btn:hover {
+    background: #b8862b;
+    transform: translateY(-4px);
+}
+
+.reserve-btn i {
+    margin-left: 10px;
+}
+
+
+/* Common Section */
+
+section {
+    padding: 90px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title span {
+    color: #D4A44F;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 45px;
+    margin-top: 15px;
+    color: #08192E;
+    font-family: "Playfair Display", serif;
+}
+
+/* Dining Categories */
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.category-card {
+    background: white;
+    border-radius: 18px;
+    padding: 45px 30px;
+    text-align: center;
+    transition: .4s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .15);
+}
+
+.category-card i {
+    font-size: 48px;
+    color: #D4A44F;
+    margin-bottom: 20px;
+}
+
+.category-card h3 {
+    font-size: 26px;
+    color: #08192E;
+    margin-bottom: 10px;
+}
+
+.category-card p {
+    color: #666;
+}
+
+/* Signature Dishes */
+
+.signature {
+    background: #f5f5f5;
+}
+
+.dish-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+
+}
+
+.dish-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .4s;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.dish-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .15);
+}
+
+.dish-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.dish-content {
+    padding: 25px;
+}
+
+.dish-content h3 {
+    color: #08192E;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+
+.rating {
+    color: #f5b301;
+    margin-bottom: 15px;
+}
+
+.rating span {
+    color: #666;
+    margin-left: 8px;
+}
+
+.dish-content h4 {
+    color: #D4A44F;
+    font-size: 26px;
+}
+
+.menu-btn {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.menu-btn a {
+    text-decoration: none;
+    background: #08192E;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.menu-btn a:hover {
+
+    background: #D4A44F;
+
+}
+
+
+/* Dining Facilities */
+
+
+.facility-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.facility-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .4s;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.facility-card:hover {
+    transform: translateY(-10px);
+}
+
+.facility-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.facility-content {
+    padding: 30px;
+}
+
+.facility-content i {
+    color: #D4A44F;
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.facility-content h3 {
+    color: #08192E;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.facility-content p {
+    color: #666;
+    line-height: 28px;
+}
+
+/* Reservation Banner */
+
+.reservation {
+    background: #08192E;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+}
+
+.reservation h2 {
+    font-size: 42px;
+    max-width: 500px;
+    font-family: "Playfair Display", serif;
+}
+
+.reservation-info {
+    display: flex;
+    gap: 60px;
+
+}
+
+.reservation-info div {
+    text-align: center;
+}
+
+.reservation-info i {
+    color: #D4A44F;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.reservation-info h3 {
+    margin-bottom: 8px;
+}
