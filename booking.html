@@ -67,76 +67,97 @@
             </div>
 
             <!-- ================= BOOKING FORM ================= -->
-
             <div class="booking-card">
                 <div class="booking-title">
                     <h2><i class="fa-solid fa-hotel"></i> Reserve Your Room</h2>
                 </div>
 
                 <form>
-                    <div class="input-content">
-                        <div class="input-box">
-                            <label>Full Name : </label>
-                            <input type="text" placeholder="Enter Full Name">
+                    <div class="row">
+                        <div class="input-content">
+                            <label>Full Name</label>
+                            <div class="input-box">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" placeholder="Enter Full Name">
+                            </div>
                         </div>
-    
-                        <div class="input-box">
+
+                        <div class="input-content">
                             <label>Email Address</label>
-                            <input type="email" placeholder="Enter Email">
+                            <div class="input-box">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="email" placeholder="Enter Email">
+                            </div>
                         </div>
-    
-                        <div class="input-box">
-                            <label>Phone Number</label>
-                            <input type="tel" placeholder="Phone Number">
+                    </div>
+
+                    <div class="row">
+                        <div class="input-content">
+                            <label>Phone Numbar </label>
+                            <div class="input-box">
+                                <i class="fa-solid fa-phone"></i>
+                                <input type="tel" placeholder="Phone Number">
+                            </div>
                         </div>
-    
-                        <div class="input-box">
+
+                        <div class="input-content">
                             <label>Select Room</label>
-    
-                            <select>
-                                <option>Luxury Suite</option>
-                                <option>Deluxe Room</option>
-                                <option>Executive Room</option>
-                                <option>Family Room</option>
-                            </select>
-                        </div>
-    
-                        <div class="double">
-    
                             <div class="input-box">
-                                <label>Check In</label>
-                                <input type="date">
-                            </div>
-    
-                            <div class="input-box">
-                                <label>Check Out</label>
-                                <input type="date">
+                                <i class="fa-solid fa-bed"></i>
+                                <select name="Room" class="select-room">
+                                    <option value="" >Select Your Room</option>
+                                    <option>Standard Room</option>
+                                    <option>Deluxe Room</option>
+                                    <option>Premium Room</option>
+                                    <option>Suite Room</option>
+                                </select>
                             </div>
                         </div>
-    
-                        <div class="input-box">
-                            <label>Guests</label>
-    
-                            <select>
-                                <option>1 Guest</option>
-                                <option>2 Guests</option>
-                                <option>3 Guests</option>
-                                <option>4 Guests</option>
-                                <option>5+ Guests</option>
-                            </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-content">
+                            <label>Check-in-Date</label>
+                            <div class="input-box">
+                                <i class="fa-solid fa-calendar-plus"></i>
+                                <input type="date" placeholder="Check-in-Date" class="new-date">
+                            </div>
                         </div>
-    
-                        <div class="input-box">
-                            <label>Special Request</label>
-                            <textarea rows="4" placeholder="Write any special request..."></textarea>
+
+                        <div class="input-content">
+                            <label>Check-out-Date</label>
+                            <div class="input-box">
+                                <i class="fa-solid fa-calendar-minus"></i>
+                                <input type="date" placeholder="Check-out-Date" >
+                            </div>
                         </div>
-                        <button>
-                            <i class="fa-solid fa-calendar-check"></i>
-                            Confirm Booking
+                    </div>
+
+                    <div class="row">
+                        <div class="input-content">
+                            <label>Number Of Guests</label>
+                            <div class="input-box">
+                                <i class="fa-solid fa-user-group"></i>
+                                <input type="number" placeholder="Number Of Guests" min="1" max="10">
+                            </div>
+                        </div>
+
+                        <div class="input-content">
+                            <label>Special Requests (optional)</label>
+                            <div class="input-box">
+                                <i class="fa-solid fa-comment"></i>
+                                <input type="text" placeholder="Special Requests">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit">
+                            <h3><i class="fa-solid fa-calendar-check"></i> Confirm Booking</h3>
+                            <p>Secure your perfect stay</p>
                         </button>
+                    </div>
                 </form>
-                </div>
-            </div>
         </section>
 
         <!-- ================= FOOTER ================= -->
